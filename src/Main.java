@@ -1,7 +1,4 @@
-import sorter.BubbleSorter;
-import sorter.InsertSorter;
-import sorter.SelectSorter;
-import sorter.Sorter;
+import sorter.*;
 
 import java.util.Comparator;
 
@@ -12,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         int[] nums = {2, 0, 2, 1, 1, 0};
 
-        Sorter sorter = new InsertSorter();
+        Sorter sorter = new MergeSorter();
         sorter.sort(nums);
 
         for (int num : nums) {
